@@ -67,3 +67,16 @@ let iterator = "Ok"[Symbol.iterator]();
 console.log(iterator.next());   // { value: 'O', done: false }
 console.log(iterator.next());   // { value: 'k', done: false }
 console.log(iterator.next());   // { value: undefined, done: true }
+
+// You Don't Know JS: Up & Going pg 30
+
+a = /* 42 é a resposta para tudo */ 42;
+
+var a = [1,2,3];
+var b = [1,2,3];
+var c = "1,2,3";
+
+a == c;     // true
+b == c;     // true
+a == b;     // false
+

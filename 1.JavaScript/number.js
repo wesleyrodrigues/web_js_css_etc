@@ -26,4 +26,6 @@ console.log(Number('0o11'));        // 9
 console.log(Number('foo'));         // NaN
 console.log(Number('100a'));        // NaN
 
+console.log(3.14199.toFixed(4))     // 3.1420
+
 console.log(Math.floor(Math.random() * 10));  // número aleatório

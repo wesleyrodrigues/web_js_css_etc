@@ -20,6 +20,7 @@ let objetos = { "One": 1, bool: false }
 
 console.log(objetos["One"]);    // 1
 console.log(objetos.bool);      // false
+console.log(objetos["bool"]);   // false
 console.log(objetos.algo);      // undefined
 
 delete objetos["One"];
@@ -55,5 +56,5 @@ map1.set("Pedro", 4)
 console.log(`map: ${map["Wesley"]}`);           // map: 1
 console.log(`map1: ${map1["Pedro"]}`);          // map1: undefined
 console.log(`map1: ${map1.get("Pedro")}`);      // map1: 4
-console.log({x: 1}.hasOwnProperty("x"));        // → true
-console.log({x: 1}.hasOwnProperty("toString")); // → false
+console.log({ x: 1 }.hasOwnProperty("x"));        // → true
+console.log({ x: 1 }.hasOwnProperty("toString")); // → false
