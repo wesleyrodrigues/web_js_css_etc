@@ -13,7 +13,7 @@ console.log(lista);     // [ 10, 2, 3, 4 ]
 console.log(lista.indexOf(10)); // 0    // Retorna o index do valor 
 console.log(lista.indexOf(5));  // -1   // Retorna -1 quando não acha
 console.log(l.lastIndexOf(1));  // 6    // Retorna index do último valor 
-console.log(l.slice(2, 5));     // [ 1, 3, 1 ] // ... index entre 2 e 5 
+console.log(l.slice(2, 5));     // [ 1, 3, 1 ] // retorna valores do index entre 2 e 5 
 console.log(l.slice(4));        // [ 1, 4, 1 ]
 
 let objetos = { "One": 1, bool: false }
@@ -28,11 +28,12 @@ console.log(objetos);               // { bool: false }
 console.log("bool" in objetos);     // true
 
 console.log(Object.keys(objetos));   // [ 'bool' ]
+console.log(Object.values(objetos))  // [ false ]
 Object.assign(objetos, { bool: true, a: 1 });
 console.log(objetos);                // { bool: true, a: 1 }
 
 let obj1 = { v: 10 };
-let obj2 = obj1;    // Se muda o obj1 o obj2 muda
+let obj2 = obj1;        // Se muda o obj1 o obj2 muda
 let obj3 = { v: 10 };
 
 console.log(obj1 == obj2);  // true
