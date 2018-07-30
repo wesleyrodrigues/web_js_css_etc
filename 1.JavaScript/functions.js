@@ -219,3 +219,21 @@ console.log(type.a) // 42
 console.log(type.b) // é resposta para tudo
 
 // (function () { console.log("oi") })() //
+
+// Transpiling -> transforming + compiling
+// Funções para navegadores antigos
+
+function r_a(a = 2){ // ES6
+    console.log(a)
+}
+
+r_a();      // 2
+r_a(42);    // 42
+
+function r_a1(){ // < ES6
+    var a = arguments[0] != (void 0) ? arguments[0] : 2;
+    console.log(a);
+}
+
+r_a1();      // 2
+r_a1(42);    // 42
