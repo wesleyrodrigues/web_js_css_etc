@@ -110,3 +110,6 @@ if (a > 41) { // Comparação if com operador ternário
 
 y = 10; // Declaração de uma variável sem definir gera erro em strict mode
 (function () { console.log("oi") })()
+
+// DOM API
+var el = document.getElementByID( "foo" );
